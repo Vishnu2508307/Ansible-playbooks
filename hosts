@@ -1,0 +1,9 @@
+[webservers]
+10.1.2.171
+10.1.2.206
+
+[appservers]
+10.1.2.85
+10.1.2.96
+
+localhost

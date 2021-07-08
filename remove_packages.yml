@@ -1,0 +1,16 @@
+---
+- name: Install &  uninstall  multiple packages
+  hosts: all
+  become: true
+  gather_facts: yes
+
+  tasks:
+  - name: uninstalling packages
+    yum:
+      name: [ 'git', 'wget',]
+      state: removed
+
+  - name: install packages
+    yum:
+      name: [ 'telnet', 'tree', 'make']
+      state: installed
